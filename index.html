@@ -33,29 +33,31 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
+  
     <div class="row">
-      <div class="six columns" style="margin-top: 10%">
-		<h1><a href="https://github.com/Olorapino"><i class="fab fa-github"></i></a> Query builder</h1>
+	<div class="twelve columns" ><a href="//molivero.com"><img src="http://molivero.com/images/logo-s.png"/></a></div>
+	</div>
+	   <div class="row">
+      <div class="six columns" style="margin-top: 5%">
+		<h1><a href="https://github.com/Olorapino/QueryBuilder"><i class="fab fa-github"></i></a> Query builder</h1>
         <div id="concepts">
           <div id="c1"><textarea placeholder="Search term1, search term2 ..." id="t1"></textarea></div>
         </div>        
         <input id="submit" type="button" onclick="addConcept()" value="Add new concept"/>
-        
-        
-
       </div>
-      <div class="six columns" style="margin-top: 10%">
+      <div class="six columns" style="margin-top: 5%">
         <form>
-          <input type="radio" name="header" id="header_simple" value="simple" checked>Simple (IEEE Xplore, Web of Science, ACM) <br>
-          <input type="radio" name="header" id="header_tak1" value="tak"> Title Abstr Key (Science Direct) <br>
-          <input type="radio" name="header" id="header_tak2" value="tak2"> Title Abs Key (Scopus) <br>
-          <input type="radio" name="header" id="header_t" value="t-a"> Title and Abs Separated (SpringerLink)
+          <input type="radio" name="header" onchange="sendCode();" id="header_simple" value="simple" checked>Simple (IEEE Xplore, Web of Science, ACM) <br>
+          <input type="radio" name="header" onchange="sendCode();" id="header_tak1" value="tak"> Title Abstr Key (Science Direct) <br>
+          <input type="radio" name="header" onchange="sendCode();" id="header_tak2" value="tak2"> Title Abs Key (Scopus) <br>
+          <input type="radio" name="header" onchange="sendCode();" id="header_t" value="t-a"> Title and Abs Separated (SpringerLink)
         </form> 
         <h4>Output</h4>
         <div id="output">Here will appear your query result.</div>
       </div>
     </div>
-  </div>
+	</div>
+  
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
